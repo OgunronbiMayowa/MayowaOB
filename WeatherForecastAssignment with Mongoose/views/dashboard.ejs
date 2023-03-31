@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS Link  -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <!-- Font Link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- FavIcon  -->
+    <link rel="shortcut icon" href="Images/raindrops.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <div class="header">
+                <h3>forecast</h3>
+                <div class="navbar">
+                    <a class="home" href="/">Home</a>
+                    <a href="/">Weather</a>
+                    <a href="/">Map</a>
+                </div>
+               
+            </div>
+            <div class="location">
+                <form action="/dashboard" method="post">
+                    <h2>The Only Weather Forecast You Need</h2>
+                    <input type="text" name="location" placeholder="Enter location. eg Paris"><img src="Images/search.png" alt="Search Bar">
+                    <button type="submit">Go</button>
+                </form>
+                
+            </div>
+        </div>
+       
+        <div class="details-container">
+            <div class="top-section">
+                <p>Current Weather Details and 5-day Weather Forecast Available</p>
+            </div>
+            <div class="bottom-section">
+                <div class="bottom-section-item1">
+                    <h3> What is the Weather like today in Paris?</h3>
+                    <div class="p">
+                        <p> Min Temp: <%= tempMinDefault %> </p>   
+                        <p> Max Temp: <%= tempMaxDefault %> </p>
+                    </div>
+                </div>
+                <div class="bottom-section-item2">
+                    <img src="<%= imageDefault %>">
+                    <div class="p">
+                        <p> Humidity: <%= humidityDefault %>% </p>
+                        <p> Pressure: <%= pressureDefault %>Pa </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="app.js"></script>    
+</body>
+</html>

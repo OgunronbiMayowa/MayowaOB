@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+
+    <!-- CSS Link  -->
+    <link rel="stylesheet" href="css/SignIn.css">
+
+    <!-- Font Link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- FavIcon  -->
+    <link rel="shortcut icon" href="Images/user.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img id="woman" src="Images/attractive-woman-with-beautiful-smile-sitting-lotus-pose-floor-using-silver-notebook-looking-away-isolated-white-wall.jpg" alt="Woman Operating laptop">
+            <a href="/signUp">Create an account</a>
+        </div>
+
+        <div class="form-container">
+            <form action="/" method="post">
+                <h1>Sign In</h1>
+                <div class="input-container">
+                    <img class="input-icon" src="images/user.png" alt="Profile">
+                    <input type="text" name="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="input-container">
+                    <img class="input-icon" src="images/padlock.png" alt="Password">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="remember-me"> 
+                    <input type="checkbox" id="checkbox" checked>
+                    <label for="checkbox">Remember me</label> 
+                </div>
+
+                <button type="submit" class="button">Log in</button>
+
+                <div class="login">
+                    <span> Or login with <img id="fb" src="Images/facebook.png" alt="Facebook"> <img id="twitter" src="Images/twitter.png" alt="Twitter"> <img id="google" src="Images/letter-g.png" alt="Google"> </span>
+                </div> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>
